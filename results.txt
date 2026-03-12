@@ -1,0 +1,13 @@
+Interesting Term: Large Language Models
+
+1. Title: Enhancing Human-Like Responses in Large Language Models  
+   Authors: Ethem Yağız Çalık, Talha Rüzgar Akkuş  
+   Summary: This paper explores the advancements in making large language models (LLMs) more human-like. It focuses on techniques to enhance natural language understanding, conversational coherence, and emotional intelligence in AI systems. The study evaluates various approaches, including fine-tuning with diverse datasets and incorporating psychological principles. The findings demonstrate that enhancements improve user interactions and open new possibilities for AI applications across different domains. Future work will address ethical implications and potential biases.  
+   Published: 2025-01-09  
+   [PDF Link](https://arxiv.org/pdf/2501.05032v2)  
+
+2. Title: Is Self-knowledge and Action Consistent or Not: Investigating Large Language Model's Personality  
+   Authors: Yiming Ai, Zhiwei He, Ziyin Zhang, Wenhong Zhu, Hongkun Hao, Kai Yu, Lingjun Chen, Rui Wang  
+   Summary: This study investigates the validity of personality questionnaires in capturing the human-like traits of LLMs. It assesses the congruence between the personality traits that LLMs claim and their actual tendencies. By examining LLM outputs against human response patterns, the research aims to understand the disjunction between self-knowledge and action in LLMs.  
+   Published: 2024-02-22  
+   [PDF Link](https://arxiv.org/pdf/2402.14679v2)  

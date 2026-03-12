@@ -1,0 +1,66 @@
+{
+  "2508.14704v1": {
+    "title": "MCP-Universe: Benchmarking Large Language Models with Real-World Model Context Protocol Servers",
+    "authors": [
+      "Ziyang Luo",
+      "Zhiqi Shen",
+      "Wenzhuo Yang",
+      "Zirui Zhao",
+      "Prathyusha Jwalapuram",
+      "Amrita Saha",
+      "Doyen Sahoo",
+      "Silvio Savarese",
+      "Caiming Xiong",
+      "Junnan Li"
+    ],
+    "summary": "The Model Context Protocol has emerged as a transformative standard for connecting large language models to external data sources and tools, rapidly gaining adoption across major AI providers and development platforms. However, existing benchmarks are overly simplistic and fail to capture real application challenges such as long-horizon reasoning and large, unfamiliar tool spaces. To address this critical gap, we introduce MCP-Universe, the first comprehensive benchmark specifically designed to evaluate LLMs in realistic and hard tasks through interaction with real-world MCP servers. Our benchmark encompasses 6 core domains spanning 11 different MCP servers: Location Navigation, Repository Management, Financial Analysis, 3D Design, Browser Automation, and Web Searching. To ensure rigorous evaluation, we implement execution-based evaluators, including format evaluators for agent format compliance, static evaluators for time-invariant content matching, and dynamic evaluators that automatically retrieve real-time ground truth for temporally sensitive tasks. Through extensive evaluation of leading LLMs, we find that even SOTA models such as GPT-5 (43.72%), Grok-4 (33.33%) and Claude-4.0-Sonnet (29.44%) exhibit significant performance limitations. In addition, our benchmark poses a significant long-context challenge for LLM agents, as the number of input tokens increases rapidly with the number of interaction steps. Moreover, it introduces an unknown-tools challenge, as LLM agents often lack familiarity with the precise usage of the MCP servers. Notably, enterprise-level agents like Cursor cannot achieve better performance than standard ReAct frameworks. Beyond evaluation, we open-source our extensible evaluation framework with UI support, enabling researchers and practitioners to seamlessly integrate new agents and MCP servers while fostering innovation in the rapidly evolving MCP ecosystem.",
+    "pdf_url": "https://arxiv.org/pdf/2508.14704v1",
+    "published": "2025-08-20"
+  },
+  "2506.11019v1": {
+    "title": "Mind the Metrics: Patterns for Telemetry-Aware In-IDE AI Application Development using the Model Context Protocol (MCP)",
+    "authors": [
+      "Vincent Koc",
+      "Jacques Verre",
+      "Douglas Blank",
+      "Abigail Morgan"
+    ],
+    "summary": "AI development environments are evolving into observability first platforms that integrate real time telemetry, prompt traces, and evaluation feedback into the developer workflow. This paper introduces telemetry aware integrated development environments (IDEs) enabled by the Model Context Protocol (MCP), a system that connects IDEs with prompt metrics, trace logs, and versioned control for real time refinement. We present design patterns for local prompt iteration, CI based optimization, and autonomous agents that adapt behavior using telemetry. Rather than focusing on a single algorithm, we describe an architecture that supports integration with frameworks like DSPy, PromptWizard, and Prompts as Programs. We demonstrate this through Opik, an open source MCP server for LLM telemetry, and position our approach within the emerging LLMOps ecosystem. This work lays a foundation for future research on prompt optimization, IDE agent tooling, and empirical benchmarking in telemetry rich AI development workflows.",
+    "pdf_url": "https://arxiv.org/pdf/2506.11019v1",
+    "published": "2025-05-14"
+  },
+  "2504.11094v2": {
+    "title": "Evaluation Report on MCP Servers",
+    "authors": [
+      "Zhiling Luo",
+      "Xiaorong Shi",
+      "Xuanrui Lin",
+      "Jinyang Gao"
+    ],
+    "summary": "With the rise of LLMs, a large number of Model Context Protocol (MCP) services have emerged since the end of 2024. However, the effectiveness and efficiency of MCP servers have not been well studied. To study these questions, we propose an evaluation framework, called MCPBench. We selected several widely used MCP server and conducted an experimental evaluation on their accuracy, time, and token usage. Our experiments showed that the most effective MCP, Bing Web Search, achieved an accuracy of 64%. Importantly, we found that the accuracy of MCP servers can be substantially enhanced by involving declarative interface. This research paves the way for further investigations into optimized MCP implementations, ultimately leading to better AI-driven applications and data retrieval solutions.",
+    "pdf_url": "https://arxiv.org/pdf/2504.11094v2",
+    "published": "2025-04-15"
+  },
+  "2603.10194v1": {
+    "title": "MCP-in-SoS: Risk assessment framework for open-source MCP servers",
+    "authors": [
+      "Pratyay Kumar",
+      "Miguel Antonio Guirao Aguilera",
+      "Srikathyayani Srikanteswara",
+      "Satyajayant Misra",
+      "Abu Saleh Md Tayeen"
+    ],
+    "summary": "Model Context Protocol (MCP) servers have rapidly emerged over the past year as a widely adopted way to enable Large Language Model (LLM) agents to access dynamic, real-world tools. As MCP servers proliferate and become easy to adopt via open-source releases, understanding their security risks becomes essential for dependable production agent deployments. Recent work has developed MCP threat taxonomies, proposed mitigations, and demonstrated practical attacks. However, to the best of our knowledge, no prior study has conducted a systematic, large-scale assessment of weaknesses in open-source MCP servers. Motivated by this gap, we apply static code analysis to identify Common Weakness Enumeration (CWE) weaknesses and map them to common attack patterns and threat categories using the MITRE Common Attack Pattern Enumerations and Classifications (CAPEC) to ground risk in real-world threats. We then introduce a risk-assessment framework for the MCP landscape that combines these threats using a multi-metric scoring of likelihood and impact. Our findings show that many open-source MCP servers contain exploitable weaknesses that can compromise confidentiality, integrity, and availability, underscoring the need for secure-by-design MCP server development.",
+    "pdf_url": "https://arxiv.org/pdf/2603.10194v1",
+    "published": "2026-03-10"
+  },
+  "2505.19339v1": {
+    "title": "Towards Humanoid Robot Autonomy: A Dynamic Architecture Integrating Continuous thought Machines (CTM) and Model Context Protocol (MCP)",
+    "authors": [
+      "Libo Wang"
+    ],
+    "summary": "To address the gaps between the static pre-set \"thinking-planning-action\" of humanoid robots in unfamiliar scenarios and the highly programmed \"call tool-return result\" due to the lack of autonomous coding capabilities, this work designs a dynamic architecture connecting continuous thought machines (CTM) and model context protocol (MCP). It proposes a theoretical parallel solution through tick-slab and uses rank compression to achieve parameter suppression to provide a solution for achieving autonomous actions due to autonomous coding. The researcher used a simulation-based experiment using OpenAI's o4-mini-high as a tool to build the experimental environment, and introduced the extended SayCan dataset to conduct nine epochs of experiments. The experimental results show that the CTM-MCP architecture is feasible and effective through the data results of seven metrics: task success rate (TSR), execution success rate (ESR), average episode length (AEL), ROSCOE, REVEAL, proficiency self-assessment (PSA), task effectiveness (TE). In practice, it provides a reference experience for exploring the autonomous dynamic coding of humanoid robots based on continuous thinking to achieve human-like autonomous actions.",
+    "pdf_url": "https://arxiv.org/pdf/2505.19339v1",
+    "published": "2025-05-25"
+  }
+}

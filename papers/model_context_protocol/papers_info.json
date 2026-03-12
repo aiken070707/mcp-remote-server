@@ -1,0 +1,36 @@
+{
+  "2507.19570v1": {
+    "title": "MCP4EDA: LLM-Powered Model Context Protocol RTL-to-GDSII Automation with Backend Aware Synthesis Optimization",
+    "authors": [
+      "Yiting Wang",
+      "Wanghao Ye",
+      "Yexiao He",
+      "Yiran Chen",
+      "Gang Qu",
+      "Ang Li"
+    ],
+    "summary": "This paper presents MCP4EDA, the first Model Context Protocol server that enables Large Language Models (LLMs) to control and optimize the complete open-source RTL-to-GDSII design flow through natural language interaction. The system integrates Yosys synthesis, Icarus Verilog simulation, OpenLane place-and-route, GTKWave analysis, and KLayout visualization into a unified LLM-accessible interface, enabling designers to execute complex multi-tool EDA workflows conversationally via AI assistants such as Claude Desktop and Cursor IDE. The principal contribution is a backend-aware synthesis optimization methodology wherein LLMs analyze actual post-layout timing, power, and area metrics from OpenLane results to iteratively refine synthesis TCL scripts, establishing a closed-loop optimization system that bridges the traditional gap between synthesis estimates and physical implementation reality. In contrast to conventional flows that rely on wire-load models, this methodology leverages real backend performance data to guide synthesis parameter tuning, optimization sequence selection, and constraint refinement, with the LLM functioning as an intelligent design space exploration agent. Experimental evaluation on representative digital designs demonstrates 15-30% improvements in timing closure and 10-20% area reduction compared to default synthesis flows, establishing MCP4EDA as the first practical LLM-controlled end-to-end open-source EDA automation system. The code and demo are avaiable at: http://www.agent4eda.com/",
+    "pdf_url": "https://arxiv.org/pdf/2507.19570v1",
+    "published": "2025-07-25"
+  },
+  "cmp-lg/9701001v1": {
+    "title": "Exploiting Context to Identify Lexical Atoms -- A Statistical View of Linguistic Context",
+    "authors": [
+      "Chengxiang Zhai"
+    ],
+    "summary": "Interpretation of natural language is inherently context-sensitive. Most words in natural language are ambiguous and their meanings are heavily dependent on the linguistic context in which they are used. The study of lexical semantics can not be separated from the notion of context. This paper takes a contextual approach to lexical semantics and studies the linguistic context of lexical atoms, or \"sticky\" phrases such as \"hot dog\". Since such lexical atoms may occur frequently in unrestricted natural language text, recognizing them is crucial for understanding naturally-occurring text. The paper proposes several heuristic approaches to exploiting the linguistic context to identify lexical atoms from arbitrary natural language text.",
+    "pdf_url": "https://arxiv.org/pdf/cmp-lg/9701001v1",
+    "published": "1997-01-02"
+  },
+  "1002.1178v1": {
+    "title": "Adaptation of TURN protocol to SIP protocol",
+    "authors": [
+      "Mustapha Guezouri",
+      "Ahmed Blaha",
+      "Mokhtar Keche"
+    ],
+    "summary": "Today, SIP is a protocol par Excellence in the field of communication over Internet. But, the fact that it belongs to the application layer constitutes a weakness vis-a-vis the NAT traversal. This weakness is due to the way in which the server replies to the requests of clients on the one hand. On the other, it is caused by the dynamic allocation of UDP ports for emission and reception of packets RTP/RTCP. The TURN Protocol may face this weakness. However, its use requires a certain number of exchanges between the clients and a TURN server before establishing the multimedia sessions and this increase the latent time. In this article, we propose to adapt TURN protocol for applications based on SIP protocol such as telephony over Internet, conference video, etc. This adaptation optimises the establishment of multimedia sessions by integrating a manager of TCP connections and multimedia flow controller into SIP Proxy server.",
+    "pdf_url": "https://arxiv.org/pdf/1002.1178v1",
+    "published": "2010-02-05"
+  }
+}
