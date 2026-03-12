@@ -1,13 +1,18 @@
 import arxiv
 import json
 import os
+import uvicorn
 from typing import List
 from mcp.server.fastmcp import FastMCP
 
 PAPER_DIR = "papers"
 
 # Initialize FastMCP server remotely on port 8001
-mcp = FastMCP("research", port=8001)
+mcp = FastMCP("research")
+
+# tools / resources / prompts ...
+
+app = mcp.sse_app()
 
 @mcp.tool()
 def search_papers(topic: str, max_results: int = 5) -> List[str]:
@@ -188,6 +193,12 @@ Follow these instructions:
 
 Please present both detailed information about each paper and a high-level synthesis of the research landscape in {topic}."""
 
+import os
+import uvicorn
+
 if __name__ == "__main__":
-    # Initialize and run the server
-    mcp.run(transport='sse')
+    uvicorn.run(
+        app,
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 8001))
+    )
