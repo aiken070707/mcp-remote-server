@@ -8,7 +8,25 @@ from mcp.server.fastmcp import FastMCP
 PAPER_DIR = "papers"
 
 # Initialize FastMCP server remotely on port 8001
-mcp = FastMCP("research")
+from mcp.server.fastmcp import FastMCP
+from mcp.server.transport_security import TransportSecuritySettings
+
+mcp = FastMCP(
+    "research",
+    transport_security=TransportSecuritySettings(
+        enable_dns_rebinding_protection=True,
+        allowed_hosts=[
+            "127.0.0.1:*",
+            "localhost:*",
+            "[::1]:*",
+            "mcp-remote-server-nicp.onrender.com:*",
+        ],
+        allowed_origins=[
+            "http://localhost:*",
+            "http://127.0.0.1:*",
+        ],
+    ),
+)
 
 # tools / resources / prompts ...
 
